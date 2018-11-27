@@ -16,6 +16,7 @@ $(document).ready(function(){
 	$('#select').on('change', function (){
 		$.ajax ({
 			url: url + key + coords[$(this).val()] + '?' + queryParams[0] + '&' + queryParams[1] + '&' + queryParams[2],
+			dataType: 'jsonp',
 			method: 'GET'
 		}).then(function (data) {
 			console.log(data);
