@@ -4,6 +4,7 @@
 	<meta charset="utf-8">
 	<title>Consultar Clima</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 </head>
 <body>
 	<div class="container">
@@ -13,9 +14,28 @@
 				<div class="form-group">
 					<select class="form-control" id="select">
 					<option>Seleccione una ubicacion</option>
-					<option>New York, Downtown</option>					
+					<option value="nyc">New York, Downtown</option>	
+					<option value="shs">Stockholm, Sweden</option>				
 					</select>
+					<span id="weather-icon"><i class="fas"></i></span>
 				</div>
+			</div>
+			<div class="col-md-8">
+				<h2 id="resumen"></h2>
+				<table class="table table-striped">
+					<tr>
+						<td>Apparent Temperature</td>
+						<td id="apparent"></td>
+					</tr>
+					<tr>
+						<td>Chance of rain</td>
+						<td id="rain"></td>
+					</tr>
+					<tr>
+						<td>Humidity</td>
+						<td id="humidity"></td>
+					</tr>
+				</table>
 			</div>
 		</div>
 	</div>
